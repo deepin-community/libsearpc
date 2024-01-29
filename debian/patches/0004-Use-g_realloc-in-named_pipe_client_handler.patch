@@ -1,0 +1,21 @@
+From: Moritz Schlarb <schlarbm@uni-mainz.de>
+Date: Mon, 12 Nov 2018 10:34:17 +0100
+Subject: Use g_realloc in named_pipe_client_handler
+
+---
+ lib/searpc-named-pipe-transport.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lib/searpc-named-pipe-transport.c b/lib/searpc-named-pipe-transport.c
+index 88aa18e..a169a0e 100644
+--- a/lib/searpc-named-pipe-transport.c
++++ b/lib/searpc-named-pipe-transport.c
+@@ -236,7 +236,7 @@ static void* named_pipe_client_handler(void *arg)
+ 
+         while (bufsize < len) {
+             bufsize *= 2;
+-            buf = realloc(buf, bufsize);
++            buf = g_realloc(buf, bufsize);
+         }
+ 
+         if (pipe_read_n(connfd, buf, len) < 0 || len == 0) {
