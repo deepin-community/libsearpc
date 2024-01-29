@@ -1,0 +1,5 @@
+0001-remove-DESTDIR-from-pkgconfig.patch
+# 0002-Fix-variable-types-and-pointer-sizes.patch
+0003-Use-argparse-in-searpc-codegen-for-basic-help.patch
+0004-Use-g_realloc-in-named_pipe_client_handler.patch
+#0005-Fix-memory-leak.patch

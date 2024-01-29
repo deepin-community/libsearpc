@@ -1,5 +1,170 @@
-template-repository (1.0-1) unstable; urgency=medium
+libsearpc (3.3.0+really3.3+git20230527.783141f-1) unstable; urgency=medium
 
-  * Initial release
+  * Update Standards-Version
+  * New upstream version 3.3.0+really3.3+git20230527.783141f
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Fri, 30 Jun 2023 12:21:29 +0200
+
+libsearpc (3.2.1-1+really3.2+git20220902.15f6f0b-2) unstable; urgency=medium
+
+  * Add special symbols file for hurd-i386
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Wed, 21 Dec 2022 10:24:21 +0100
+
+libsearpc (3.2.1-1+really3.2+git20220902.15f6f0b-1) unstable; urgency=medium
+
+  * Update Standards-Version
+  * New upstream version 3.2.1-1+really3.2+git20220902.15f6f0b
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Thu, 24 Nov 2022 14:51:47 +0100
+
+libsearpc (3.2.0-8+really3.2+git20220425.54145b0-1) unstable; urgency=medium
+
+  * New upstream version 3.2.0-8+really3.2+git20220425.54145b0
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Tue, 03 May 2022 22:08:33 +0200
+
+libsearpc (3.2.0-7-g50ff08b-1) unstable; urgency=medium
+
+  * New upstream version 3.2.0-7-g50ff08b (v.3.2-latest)
+  * Update dh compat and policy version
+  * Remove unnecessary dep and patch
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Wed, 11 Nov 2020 10:53:18 +0100
+
+libsearpc (3.2.0-3) unstable; urgency=medium
+
+  * Fix autopkgtest for Python 3
+  * Remove unnecessary dirs file
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Sun, 29 Dec 2019 14:20:31 +0100
+
+libsearpc (3.2.0-2) unstable; urgency=medium
+
+  * Version bump for source-only upload to allow migration to testing
+  * Update Salsa CI pipeline file
+  * Salsa CI: Publish Package Repo via Aptly
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Sat, 28 Dec 2019 13:43:58 +0100
+
+libsearpc (3.2.0-1) unstable; urgency=medium
+
+  * New upstream version 3.2.0
+  * Update Standards-Version
+  * Update patches
+  * Update Symbols File
+  * Remove Python 2 Support
+  * Add Python 3 Support (Closes: #936916)
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Tue, 19 Nov 2019 15:12:48 +0100
+
+libsearpc (3.1.0-3) unstable; urgency=medium
+
+  * Add Salsa Pipeline (https://salsa.debian.org/salsa-ci-team/pipeline)
+  * Patch: Use g_realloc in named_pipe_client_handler
+  * Fix serialization variable sizes (Closes: 913555)
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Mon, 12 Nov 2018 11:34:30 +0100
+
+libsearpc (3.1.0-2) unstable; urgency=medium
+
+  * Mark current autodep8 test as superficial, which is more honest
+  * Fix DEP-8 test suite
+  * Add Build-Depends-Package: to symbols file
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Fri, 09 Nov 2018 21:01:06 +0100
+
+libsearpc (3.1.0-1) unstable; urgency=medium
+
+  * New upstream version 3.1.0
+  * Add DEP8 tests from autodep8
+  * Use https for URLs in d/copyright and d/patches
+  * Change Maintainer to Debian Seafile Team
+  * Refresh patches
+  * Update Standards-Version
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Tue, 11 Sep 2018 14:12:02 +0200
+
+libsearpc (3.0.8-6) unstable; urgency=medium
+
+  * Streamline d/copyright and d/rules
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Thu, 24 May 2018 14:54:04 +0200
+
+libsearpc (3.0.8-5) unstable; urgency=medium
+
+  * Update debhelper and d/compat to 10
+  * Move searpc-codegen to libsearpc-dev package
+  * Use help2man and argparse to generate manpage for searpc-codegen
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Wed, 16 May 2018 15:22:28 +0200
+
+libsearpc (3.0.8-4) unstable; urgency=medium
+
+  * Add patch for FTBFS on 64bit big endian and refresh patch series
+    (Closes: #895467)
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Mon, 16 Apr 2018 16:33:53 +0200
+
+libsearpc (3.0.8-3) unstable; urgency=medium
+
+  * debian/control: Reorder binary packages, reword descriptions
+  * debian/control: Cleanup and update depends
+  * debian/rules: Use dbgsym-migration in dh_strip correctly
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Fri, 13 Apr 2018 21:56:35 +0200
+
+libsearpc (3.0.8-2) unstable; urgency=medium
+
+  * debian/control: Reordering statements and fixing descriptions to be in
+    sync with each other
+  * debian/control: Update Standards-Version and change Priority to optional
+  * Automatically generate dbgsym package instead of explicitly having a dbg
+    package
+  * debian/rules: Re-enable tests - they work.
+
+ -- Moritz Schlarb <schlarbm@uni-mainz.de>  Wed, 11 Apr 2018 16:54:13 +0200
+
+libsearpc (3.0.8-1) unstable; urgency=medium
+
+  [ Moritz Schlarb ]
+  * New upstream version 3.0.8
+
+  [ Christoph Martin ]
+  * finalize release
+
+ -- Christoph Martin <martin@uni-mainz.de>  Tue, 10 Jan 2017 17:19:33 +0100
+
+libsearpc (3.0.7+git20161217.04f6ba7-1) unstable; urgency=medium
+
+  * Imported Upstream version 3.0.7+git20161217.04f6ba7
+    fixes license issues
+  * Initial Debian packaging
+  * Update standards version
+  * Update to debhelper 9
+
+ -- Christoph Martin <martin@uni-mainz.de>  Mon, 19 Dec 2016 14:20:05 +0100
+
+libsearpc1 (3.0.7-5ubuntu1) UNRELEASED; urgency=medium
+
+  * repackaging with cleaned up orig.tar.xz archives
+  * added symbol file
+
+ -- m.eik michalke <meik.michalke@hhu.de>  Fri, 17 Jun 2016 12:09:14 +0200
+
+libsearpc1 (3.0.7-4) unstable; urgency=medium
+
+  * split package libsearpc1 and libsearpc-dev
+  * updated the debian/copyright notice so people know who's responisble for the packaging
+  * rewrote the rules file, much simpler now
+  * prep for release on github
+
+ -- m.eik michalke <meik.michalke@hhu.de>  Wed, 15 Jun 2016 22:16:03 +0200
+
+libsearpc (3.0.3-1) unstable; urgency=medium
+
+  * Initial release (Related to #698681 and #709295)
+  * Add correct Multi-Arch headers for libraries and python bindings
+  * Reorder the #define DFT_DOMAIN and #include <searpc.h> in tests to fix FTBFS
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 05 May 2014 14:19:03 +0200
